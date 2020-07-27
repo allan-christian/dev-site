@@ -24,7 +24,9 @@ const Index = () => (
         className="mx-2 cursor-pointer hover:text-gray-400 transitiontransition-colors duration-200"
         onClick={() => {
           const win = window.open('mailto:me@allanchristian.dev', 'emailWindow')
-          if (win && win.open && !win.closed) win.close()
+          if (win && win.open && !win.closed) {
+            setTimeout(win.close, 500)
+          }
         }}
       />
       <FontAwesomeIcon
