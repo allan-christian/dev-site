@@ -20,7 +20,8 @@ const Index = () => (
       <FontAwesomeIcon
         icon={faEnvelope}
         fixedWidth
-        className="text-2xl md:text-4xl mx-2 cursor-pointer hover:text-gray-400 transitiontransition-colors duration-200"
+        size="2x"
+        className="mx-2 cursor-pointer hover:text-gray-400 transitiontransition-colors duration-200"
         onClick={() => {
           const win = window.open('mailto:me@allanchristian.dev', 'emailWindow')
           if (win && win.open && !win.closed) win.close()
@@ -29,7 +30,8 @@ const Index = () => (
       <FontAwesomeIcon
         icon={faLinkedin}
         fixedWidth
-        className="text-2xl md:text-4xl mx-2 cursor-pointer hover:text-gray-400 transition transition-colors duration-200"
+        size="2x"
+        className="mx-2 cursor-pointer hover:text-gray-400 transition transition-colors duration-200"
         onClick={() =>
           (window.location = 'https://www.linkedin.com/in/neeonline/')
         }
