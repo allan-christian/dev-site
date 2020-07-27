@@ -1,9 +1,9 @@
 module.exports = {
-  purge: [],
-  theme: {
-    extend: {
-      fontFamily: {
-        body: [
+    purge: ['./components/**/*.js', './pages/**/*.js'],
+    theme: {
+        extend: {
+            fontFamily: {
+                body: [
           '"Open Sans"',
           'system-ui',
           '-apple-system',
@@ -19,9 +19,9 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
-      },
+            },
+        },
     },
-  },
-  variants: {},
-  plugins: [],
+    variants: {},
+    plugins: [],
 }
